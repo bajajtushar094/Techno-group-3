@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="C:\Users\bajaj\Documents\Webpage\script.js">
+          </script>
+          <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Difficulty Level In Question Paper', 'Questions'],
+          ['Easy',     8],
+          ['Noob',      2],
+          ['Medium',  5],
+          ['Challenging', 4],
+          ['Hard',    3]
+        ]);
+
+        var options = {
+          title: 'Difficulty Level In Question Paper'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Your Performance', 'Questions'],
+          ['Correct',     9],
+          ['Wrong',  13]
+          
+        ]);
+
+        var options = {
+          title: 'Your Performance',
+          pieHole: 0.4,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+        chart.draw(data, options);
+      }
+    </script>
+       
+  </head>
+  <body>
+    <section>
+      <h1 id= "heading">Technothlon Result</h1>
+      <hr class ="line" align="center" width="60%"  color= #660033 noshade>
+      <h2 class ="tushar" id="rank"></h2>
+      <hr class ="line" align="center" width="60%"  color= #660033 noshade>
+      <h2 id="message" class="bajaj"></h2>
+       <hr class ="line" align="center" width="60%" color= #660033 noshade>
+    </section>
+     <section>
+        <div class ="chart" id="piechart" style="width: 80%; height: 500px;"></div>
+    <div  class ="chart" id="donutchart" style="width: 80%; height: 500px;"></div>
+  </section>
+
+      <section>
+        <p class ="image" id="deductive">
+          <script>
+            deductive();
+          </script>
+      </p>
+        <p class ="image" id="logic">
+          <script>
+          logic();
+          </script>
+        </p>
+        <p class ="image">
+          <script>
+            obs();
+          </script>
+        </p>
+        <p>
+          <script>
+            te();
+          </script>
+        </p>
+        <p>
+          <script>
+            visual();
+          </script>
+        </p>
+      </section>
+<script src="C:\Users\bajaj\Documents\Webpage\script.js">
+          </script>
+       
+
+
+
+  </body>
+  
+</html>
